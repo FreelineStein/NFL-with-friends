@@ -8,7 +8,8 @@ thinking and architecture decisions; this file is the repo-local delta. Keep it 
 - Build plan: `/Users/jacobstein/Brain/Projects/NFL-Tracker/handoff-nfl-tracker.md`
 - Record new architecture decisions in the mirror and reference them from commits.
 - Sibling repo and reference implementation: `/Users/jacobstein/Documents/Projects/MLB-with-friends`
-- Production URL: pending (handoff step 9). GitHub: `FreelineStein/NFL-with-friends`.
+- Production URL: https://nfl-with-friends.vercel.app (Vercel project `nfl-with-friends`, team `freelinesteins-projects`). GitHub: `FreelineStein/NFL-with-friends` (private).
+- Deploys run from the CLI (`npx vercel deploy --prod`) until the Vercel GitHub app is granted access to the repo; after that, pushes to `main` deploy automatically.
 
 ## Stack
 
