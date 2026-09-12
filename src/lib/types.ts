@@ -56,8 +56,8 @@ export interface MarketEntrant {
   label: string;
   /** Present for team markets only. */
   abbreviation?: string;
-  /** Raw American odds exactly as listed, e.g. "+450" or "-120". Display this. */
-  american: string;
+  /** Raw American odds exactly as listed, e.g. "+450" or "-120". Display this. Absent on derived markets. */
+  american?: string;
   /** Vig-removed implied probability within this market. Scoring only, never displayed. */
   prob: number;
 }
@@ -79,14 +79,17 @@ export type MarketKey =
   | "nfcSouth"
   | "nfcWest";
 
+/** Markets the app derives itself (no sportsbook listing). */
+export type DerivedMarketKey = "afcWildcard" | "nfcWildcard";
+
 export interface Market {
-  key: MarketKey;
+  key: MarketKey | DerivedMarketKey;
   displayName: string;
   provider: string;
   entrants: MarketEntrant[];
 }
 
-export type Markets = Partial<Record<MarketKey, Market>>;
+export type Markets = Partial<Record<MarketKey | DerivedMarketKey, Market>>;
 
 export interface ModelFlags {
   wildcard: "market" | "heuristic";
