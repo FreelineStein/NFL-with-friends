@@ -174,6 +174,30 @@ export const participants: PickEntry[] = [
     mvp: "Joe Burrow",
     roy: "Carnell Tate",
   },
+  {
+    name: "Stein",
+    afcDivisions: { East: "BUF", North: "CIN", South: "IND", West: "DEN" },
+    nfcDivisions: { East: "DAL", North: "DET", South: "TB", West: "SF" },
+    afcWildcards: ["BAL", "LAC", "HOU"],
+    nfcWildcards: ["PHI", "SEA", "CHI"],
+    superBowl: { afc: "BUF", nfc: "DET" },
+    superBowlWinner: "DET",
+    superBowlMvp: "Jared Goff",
+    mvp: "Josh Allen",
+    roy: "KC Concepcion",
+  },
+  {
+    name: "Zach Plummer",
+    afcDivisions: { East: "BUF", North: "CIN", South: "JAX", West: "LAC" },
+    nfcDivisions: { East: "DAL", North: "DET", South: "CAR", West: "SF" },
+    afcWildcards: ["NE", "BAL", "DEN"],
+    nfcWildcards: ["CHI", "SEA", "PHI"],
+    superBowl: { afc: "BUF", nfc: "DET" },
+    superBowlWinner: "BUF",
+    superBowlMvp: "Josh Allen",
+    mvp: "Josh Allen",
+    roy: "Carnell Tate",
+  },
 ];
 
 const problems = validateParticipants(participants);

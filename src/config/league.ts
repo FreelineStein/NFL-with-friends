@@ -129,6 +129,8 @@ export const PARTICIPANT_COLORS = [
   "#b45309", // amber
   "#7c3aed", // violet
   "#be123c", // rose
+  "#059669", // emerald
+  "#c026d3", // fuchsia
 ];
 
 export function teamLogoUrl(abbr: string): string {
