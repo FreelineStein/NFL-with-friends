@@ -110,8 +110,8 @@ export const UNLISTED_PLAYER_PROB = 0.005;
 /** Cap on the derived P(reach Super Bowl) when no conference champion market exists. */
 export const SUPER_BOWL_REACH_CAP = 0.95;
 
-/** Athlete refs resolved per player market, by shortest odds. */
-export const ATHLETE_RESOLVE_CAP = 25;
+/** Athlete refs resolved per player market, by shortest odds. 200 covers every listed entrant; a long-shot pick like +12000 would otherwise fall to the floor probability. */
+export const ATHLETE_RESOLVE_CAP = 200;
 
 /** MLB palette first, extended for a larger group. */
 export const PARTICIPANT_COLORS = [
@@ -125,6 +125,10 @@ export const PARTICIPANT_COLORS = [
   "#ca8a04", // yellow
   "#4f46e5", // indigo
   "#65a30d", // lime
+  "#0891b2", // cyan
+  "#b45309", // amber
+  "#7c3aed", // violet
+  "#be123c", // rose
 ];
 
 export function teamLogoUrl(abbr: string): string {

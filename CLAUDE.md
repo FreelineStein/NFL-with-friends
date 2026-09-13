@@ -29,7 +29,7 @@ public APIs with Vercel data-cache revalidation; everything visual is client-ren
   required for division children), fetch revalidate 1h. Returns `{ teams, fetchedAt }`.
 - `src/app/api/odds/route.ts`: ESPN futures
   (`sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2026/futures`),
-  fetch revalidate 6h, athlete `$ref`s resolved (top 25 per player market) and cached
+  fetch revalidate 6h, athlete `$ref`s all resolved (cap 200 per player market) and cached
   in-module. Returns `{ markets, model, fetchedAt }` including derived wildcard markets.
   Both routes are `force-dynamic`; the upstream fetch is what the data cache holds, so
   `fetchedAt` is the assembly time, not the cache time.
