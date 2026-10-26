@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: `Degens NFL ${SEASON}`,
+  title: "NFL with Friends",
   description: `Season-long NFL predictions game: picks, standings, futures, and a forecasted leaderboard for the ${SEASON} season`,
 };
 

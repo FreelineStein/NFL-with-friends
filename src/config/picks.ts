@@ -19,7 +19,7 @@ export const participants: PickEntry[] = [
     roy: "Jeremiyah Love",
   },
   {
-    name: "Suck me off JOE (Drew)",
+    name: "Drew",
     afcDivisions: { East: "BUF", North: "BAL", South: "JAX", West: "LAC" },
     nfcDivisions: { East: "PHI", North: "DET", South: "TB", West: "SF" },
     afcWildcards: ["DEN", "NE", "HOU"],
